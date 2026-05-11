@@ -1,0 +1,29 @@
+app:
+  host: 0.0.0.0
+  port: 5000
+  target_lang: en
+  max_articles: 10
+
+api:
+  tagesschau_homepage_api: https://www.tagesschau.de/api2u/homepage/
+  translate_endpoint: https://api.mymemory.translated.net/get
+  tts_lang: de
+  request_timeout_seconds: 12
+  user_agent: german-news-flask-app/1.0
+
+features:
+  # Paths to word-list files (one lemma per line, # lines are comments).
+  # Each level should only contain words NOT already covered by lower levels.
+  cefr_level_files:
+    a1: data/a1.txt
+    a2: data/a2.txt
+    b1: data/b1.txt
+    b2: data/b2.txt
+    c1: data/c1.txt
+
+  # Block types from the Tagesschau API content array to include as article text.
+  # Known types: text, headline, box, quotation, video, related
+  content_block_types:
+    - text
+    - headline
+

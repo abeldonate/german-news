@@ -1,0 +1,11 @@
+- Checkboxes on levels
+- move stuff around on frontend
+- fit better article
+- other sources of articles
+
+# More complex
+- semantics of words
+
+# Last stage
+- Learn rust
+- Migrate to rust

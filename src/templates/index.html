@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>German News Learner</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <div class="backdrop"></div>
+  <main class="layout">
+    <aside class="articles-sidebar">
+      <h2>Artikel</h2>
+      <nav class="articles-list">
+        {% for article in articles %}
+        <button class="article-item {% if loop.index0 == 0 %}article-item--active{% endif %}" data-index="{{ loop.index0 }}">
+          <div class="article-item-title">{{ article.title[:50] }}{% if article.title|length > 50 %}…{% endif %}</div>
+        </button>
+        {% endfor %}
+      </nav>
+    </aside>
+
+    <section class="article-panel">
+      <div class="article-header">
+        <div>
+          <p class="eyebrow">Tagesschau Learning Feed</p>
+          <h1 id="article-title">{{ articles[0].title }}</h1>
+        </div>
+        <button id="listen-all" type="button" class="btn-listen-all">🔊 Listen</button>
+      </div>
+      
+      {% if articles[0].url %}
+      <p><a id="article-url" href="{{ articles[0].url }}" target="_blank" rel="noopener">Open original article</a></p>
+      {% endif %}
+
+      <div id="article-text" class="article-text">{{ articles[0].annotated_html }}</div>
+
+    </section>
+
+    <aside class="side-panel">
+      <h2>Learning Tools</h2>
+      <p>Click any word to translate it. Select text and use <em>Translate selection</em> for a full sentence.</p>
+
+      <div class="legend">
+        <h3>CEFR color legend</h3>
+        <ul>
+          <li><span class="dot a2"></span>A2</li>
+          <li><span class="dot b1"></span>B1</li>
+          <li><span class="dot b2"></span>B2</li>
+          <li><span class="dot c1"></span>C1</li>
+        </ul>
+      </div>
+    </aside>
+  </main>
+
+  <div id="word-tooltip" class="word-tooltip" role="tooltip" aria-live="polite" hidden>
+    <div class="word-tooltip-source"></div>
+    <div class="selection-actions" hidden>
+      <button id="selection-translate" type="button" class="selection-action">Translate</button>
+      <button id="selection-listen" type="button" class="selection-action">Listen</button>
+    </div>
+    <div class="word-tooltip-arrow"></div>
+    <div class="word-tooltip-translation"></div>
+  </div>
+
+  <script>
+    window.APP_CONFIG = {
+      targetLang: "{{ target_lang }}",
+      articles: {{ articles|tojson }}
+    };
+  </script>
+  <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>

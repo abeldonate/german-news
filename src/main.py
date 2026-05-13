@@ -57,11 +57,15 @@ CARDS_STATE_FILE = os.path.join(
     str(FEATURE_SETTINGS.get("cards_state_file", "data/cards_a2_state.yml")),
 )
 LEITNER_BOX0_LIMIT = int(FEATURE_SETTINGS.get("leitner_box0_limit", 50))
+LEITNER_BOX_RATIOS = FEATURE_SETTINGS.get("leitner_box_ratios", {})
+if not isinstance(LEITNER_BOX_RATIOS, dict):
+    LEITNER_BOX_RATIOS = {}
 
 CARDS_A2_DECK = LeitnerDeck(
     words_file=A2_WORDS_FILE,
     state_file=CARDS_STATE_FILE,
     box0_limit=LEITNER_BOX0_LIMIT,
+    box_ratios=LEITNER_BOX_RATIOS,
 )
 
 

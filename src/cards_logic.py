@@ -7,7 +7,8 @@ import yaml
 
 # Box weights: cards in lower boxes are shown more frequently.
 # Box 1 is shown 16× more often than box 5.
-_BOX_WEIGHTS = {1: 16, 2: 8, 3: 4, 4: 2, 5: 1}
+# Default weights; can be overridden by config at runtime.
+_DEFAULT_BOX_WEIGHTS = {0: 1, 1: 12, 2: 4, 3: 2, 4: 1, 5: 0}
 
 
 class LeitnerDeck:
@@ -23,14 +24,33 @@ class LeitnerDeck:
     Whenever active < box0_limit, words are introduced from box 0.
     """
 
-    def __init__(self, words_file: str, state_file: str, box0_limit: int = 50) -> None:
+    def __init__(
+        self,
+        words_file: str,
+        state_file: str,
+        box0_limit: int = 50,
+        box_ratios: dict[str, int] | None = None,
+    ) -> None:
         self.words_file = words_file
         self.state_file = state_file
         self.box0_limit = max(1, int(box0_limit))
         self._lock = Lock()
+        self._box_weights = self._build_weights(box_ratios or {})
         self._state = self._load_state()
 
     # ------------------------------------------------------------------ helpers
+
+    def _build_weights(self, box_ratios: dict[str, int]) -> dict[int, int]:
+        """Normalize box ratios into integer weights for random.choices()."""
+        weights = {}
+        for box_num in range(6):
+            key = f"box{box_num}"
+            ratio = int(box_ratios.get(key, 0))
+            weights[box_num] = max(0, ratio)
+        # If all weights are 0, use defaults.
+        if sum(weights.values()) == 0:
+            weights = _DEFAULT_BOX_WEIGHTS.copy()
+        return weights
 
     def _load_words(self) -> list[str]:
         words: list[str] = []
@@ -124,12 +144,18 @@ class LeitnerDeck:
             cards = self._state.get("cards", {})
             self._introduce_new_words(cards)
 
+            # Collect cards from all active boxes (0-5).
             active = [(w, c) for w, c in cards.items()
-                      if isinstance(c, dict) and 1 <= c.get("box", 0) <= 5]
+                      if isinstance(c, dict) and 0 <= c.get("box", 0) <= 5]
             if not active:
                 return None
 
-            weights = [_BOX_WEIGHTS[c.get("box", 1)] for _, c in active]
+            # Weight each card by its box's ratio.
+            weights = [self._box_weights.get(c.get("box", 1), 1) for _, c in active]
+            # Skip selection if all weights are 0.
+            if sum(weights) == 0:
+                weights = [1] * len(active)
+            
             (word, card), = random.choices(active, weights=weights, k=1)
             return self._card_payload(word, card)
 

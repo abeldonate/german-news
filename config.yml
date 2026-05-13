@@ -28,6 +28,17 @@ features:
   # New words are introduced from box 0 as this headroom frees up.
   leitner_box0_limit: 50
 
+  # Leitner box selection ratios (in percentages).
+  # Determines the probability of drawing a card from each box.
+  # Ratios are normalized automatically; they don't need to sum to 100.
+  leitner_box_ratios:
+    box0: 5    # New/unseen words
+    box1: 60   # Recently learned
+    box2: 15   # Consolidating
+    box3: 10   # Advanced
+    box4: 5    # Expert
+    box5: 5    # Mastered (rarely review)
+
   # Block types from the Tagesschau API content array to include as article text.
   # Known types: text, headline, box, quotation, video, related
   content_block_types:

@@ -9,6 +9,8 @@ Small Flask app to fetch one article from Tagesschau and render it for German le
 - Select a sentence and translate the full selection.
 - Listen to selected text or the full article using browser text-to-speech (in progress).
 - Highlights vocabulary with CEFR color tags (A2, B1, B2, C1).
+- Includes an A2 spaced-repetition deck page at /cards.
+- Tap a German word card to reveal translation, then rate with Again/Hard/Good/Easy.
 
 ### Setup
 

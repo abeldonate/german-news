@@ -1,14 +1,12 @@
-import html
 import os
-import re
-from io import BytesIO
 from typing import Any
 
-import requests
 import yaml
+from cards_logic import LeitnerDeck
 from flask import Flask, Response, jsonify, render_template, request
-from gtts import gTTS
-from markupsafe import Markup
+from article_processing import build_articles_payload, load_cefr_levels
+from listening_service import build_tts_audio
+from translation_service import remote_translate
 
 template_path = os.path.abspath("src/templates")
 static_path = os.path.abspath("src/static")
@@ -48,211 +46,40 @@ app = Flask(
 )
 
 
-def load_word_file(path: str) -> set[str]:
-    """Load a word-list text file; skip blank lines and comment lines starting with #."""
-    words: set[str] = set()
-    try:
-        with open(path, "r", encoding="utf-8") as fh:
-            for line in fh:
-                word = line.strip()
-                if word and not word.startswith("#"):
-                    words.add(word.lower())
-    except OSError:
-        pass
-    return words
-
-
-def load_cefr_levels(level_files: dict[str, str]) -> dict[str, set[str]]:
-    levels: dict[str, set[str]] = {}
-    for level, rel_path in level_files.items():
-        abs_path = os.path.join(os.path.abspath("."), rel_path)
-        levels[str(level).lower()] = load_word_file(abs_path)
-    return levels
-
-
 CEFR_LEVELS = load_cefr_levels(FEATURE_SETTINGS.get("cefr_level_files", {}))
-CONTENT_BLOCK_TYPES = set(FEATURE_SETTINGS.get("content_block_types", ["text", "headline"]))
-_TAG_PATTERN = re.compile(r"<[^>]+>")
+A2_CONTENT_BLOCK_TYPES = set(FEATURE_SETTINGS.get("content_block_types", ["text", "headline"]))
+A2_WORDS_FILE = os.path.join(
+    os.path.abspath("."),
+    str(FEATURE_SETTINGS.get("cefr_level_files", {}).get("a2", "data/a2.txt")),
+)
+CARDS_STATE_FILE = os.path.join(
+    os.path.abspath("."),
+    str(FEATURE_SETTINGS.get("cards_state_file", "data/cards_a2_state.yml")),
+)
+LEITNER_BOX0_LIMIT = int(FEATURE_SETTINGS.get("leitner_box0_limit", 50))
 
-
-def fetch_json(url: str) -> dict[str, Any] | None:
-    headers = {"User-Agent": REQUEST_USER_AGENT}
-    try:
-        response = requests.get(url, headers=headers, timeout=REQUEST_TIMEOUT_SECONDS)
-        response.raise_for_status()
-        return response.json()
-    except (requests.RequestException, ValueError):
-        return None
-
-
-def maybe_article_node(node: dict[str, Any]) -> bool:
-    if "title" not in node:
-        return False
-    return any(
-        key in node
-        for key in (
-            "detailsweb",
-            "details",
-            "shareURL",
-            "url",
-            "teasertext",
-            "firstSentence",
-        )
-    )
-
-
-def collect_articles(obj: Any, bucket: list[dict[str, Any]]) -> None:
-    if isinstance(obj, dict):
-        if maybe_article_node(obj):
-            bucket.append(obj)
-        for value in obj.values():
-            collect_articles(value, bucket)
-    elif isinstance(obj, list):
-        for item in obj:
-            collect_articles(item, bucket)
-
-
-def clean_article_candidates(candidates: list[dict[str, Any]]) -> list[dict[str, Any]]:
-    unique: dict[str, dict[str, Any]] = {}
-    for article in candidates:
-        key = (
-            article.get("detailsweb")
-            or article.get("shareURL")
-            or article.get("url")
-            or article.get("title")
-        )
-        if not key:
-            continue
-        unique[str(key)] = article
-    return list(unique.values())
-
-
-def strip_html_tags(value: str) -> str:
-    return _TAG_PATTERN.sub("", value).strip()
-
-
-def extract_text_from_content_blocks(content: list[Any]) -> str:
-    paragraphs: list[str] = []
-    for block in content:
-        if not isinstance(block, dict):
-            continue
-        block_type = block.get("type", "")
-        if block_type not in CONTENT_BLOCK_TYPES:
-            continue
-        value = block.get("value", "")
-        if not isinstance(value, str):
-            continue
-        text = strip_html_tags(value)
-        if text:
-            paragraphs.append(text)
-    return "\n\n".join(paragraphs)
-
-
-def pick_article_text(article: dict[str, Any]) -> str:
-    # Prefer the dedicated details JSON endpoint for full content
-    details_url = article.get("details", "")
-    if details_url and isinstance(details_url, str) and details_url.startswith("http"):
-        details_data = fetch_json(details_url)
-        if details_data:
-            blocks = details_data.get("content", [])
-            if isinstance(blocks, list):
-                text = extract_text_from_content_blocks(blocks)
-                if text:
-                    return text
-
-    # Fall back to content blocks already embedded in the homepage article node
-    blocks = article.get("content", [])
-    if isinstance(blocks, list):
-        text = extract_text_from_content_blocks(blocks)
-        if text:
-            return text
-
-    # Last resort: use the short teaser fields only
-    teaser_parts = [
-        article.get("firstSentence", ""),
-        article.get("teasertext", ""),
-    ]
-    return "\n\n".join(p for p in teaser_parts if p)
-
-
-def cefr_level_for_word(word: str) -> str | None:
-    normalized = word.lower()
-    for level, words in CEFR_LEVELS.items():
-        if normalized in words:
-            return level
-    return None
-
-
-def annotate_text_with_levels(text: str) -> Markup:
-    token_pattern = re.compile(r"[A-Za-zÄÖÜäöüß]+(?:-[A-Za-zÄÖÜäöüß]+)*|\s+|[^\w\s]", re.UNICODE)
-    parts: list[str] = []
-
-    for token in token_pattern.findall(text):
-        if token.isspace():
-            parts.append(token)
-        elif re.fullmatch(r"[A-Za-zÄÖÜäöüß]+(?:-[A-Za-zÄÖÜäöüß]+)*", token):
-            level = cefr_level_for_word(token)
-            classes = "word"
-            if level:
-                classes = f"word level-{level}"
-            token_html = (
-                f'<span class="{classes}" data-word="{html.escape(token)}">'
-                f"{html.escape(token)}</span>"
-            )
-            parts.append(token_html)
-        else:
-            parts.append(html.escape(token))
-
-    return Markup("".join(parts))
-
-
-def build_articles_payload(max_count: int = 1) -> list[dict[str, Any]]:
-    """Fetch and parse multiple articles from the API."""
-    homepage_data = fetch_json(TAGESSCHAU_HOMEPAGE_API)
-    if not homepage_data:
-        return []
-
-    candidates: list[dict[str, Any]] = []
-    collect_articles(homepage_data, candidates)
-    articles = clean_article_candidates(candidates)
-    articles = articles[:max_count]
-
-    if not articles:
-        return []
-
-    payloads: list[dict[str, Any]] = []
-    for article in articles:
-        title = str(article.get("title", "Ohne Titel"))
-        url = str(article.get("detailsweb") or article.get("shareURL") or article.get("url") or "")
-        text = pick_article_text(article).strip()
-        if not text:
-            text = "Dieser Artikel enthaelt in der API nur kurze Metadaten."
-
-        payloads.append({
-            "title": title,
-            "url": url,
-            "text": text,
-            "annotated_html": annotate_text_with_levels(text),
-        })
-    
-    return payloads
-
-
-def remote_translate(text: str, target_lang: str) -> str:
-    params = {"q": text, "langpair": f"de|{target_lang}"}
-    try:
-        response = requests.get(TRANSLATE_ENDPOINT, params=params, timeout=REQUEST_TIMEOUT_SECONDS)
-        response.raise_for_status()
-        payload = response.json()
-        translated = payload.get("responseData", {}).get("translatedText", "")
-        return str(translated).strip()
-    except (requests.RequestException, ValueError):
-        return ""
+CARDS_A2_DECK = LeitnerDeck(
+    words_file=A2_WORDS_FILE,
+    state_file=CARDS_STATE_FILE,
+    box0_limit=LEITNER_BOX0_LIMIT,
+)
 
 
 @app.route("/")
-def page_index() -> str:
-    articles = build_articles_payload(MAX_ARTICLES)
+def page_dashboard() -> str:
+    return render_template("dashboard.html")
+
+
+@app.route("/news")
+def page_news() -> str:
+    articles = build_articles_payload(
+        TAGESSCHAU_HOMEPAGE_API,
+        MAX_ARTICLES,
+        A2_CONTENT_BLOCK_TYPES,
+        CEFR_LEVELS,
+        REQUEST_TIMEOUT_SECONDS,
+        REQUEST_USER_AGENT,
+    )
     if not articles:
         articles = [{
             "title": "API nicht erreichbar",
@@ -263,13 +90,18 @@ def page_index() -> str:
     return render_template("index.html", articles=articles, target_lang=APP_TARGET_LANG)
 
 
+@app.route("/cards")
+def page_cards() -> str:
+    return render_template("cards.html", target_lang=APP_TARGET_LANG)
+
+
 @app.route("/api/word-translate")
 def api_word_translate():
     word = request.args.get("word", "").strip()
     if not word:
         return jsonify({"error": "Missing word parameter."}), 400
 
-    translated = remote_translate(word, APP_TARGET_LANG)
+    translated = remote_translate(word, APP_TARGET_LANG, TRANSLATE_ENDPOINT, REQUEST_TIMEOUT_SECONDS)
     if not translated:
         translated = "Translation unavailable"
 
@@ -289,7 +121,7 @@ def api_text_translate():
     if not text:
         return jsonify({"error": "Missing text in request body."}), 400
 
-    translated = remote_translate(text, APP_TARGET_LANG)
+    translated = remote_translate(text, APP_TARGET_LANG, TRANSLATE_ENDPOINT, REQUEST_TIMEOUT_SECONDS)
     if not translated:
         translated = "Translation unavailable"
 
@@ -314,13 +146,10 @@ def api_text_to_speech():
         return jsonify({"error": "Text too long for one TTS request."}), 400
 
     try:
-        audio_buffer = BytesIO()
-        tts = gTTS(text=text, lang=TTS_LANG, slow=False)
-        tts.write_to_fp(audio_buffer)
-        audio_buffer.seek(0)
+        audio_bytes = build_tts_audio(text, TTS_LANG)
 
         return Response(
-            audio_buffer.read(),
+            audio_bytes,
             mimetype="audio/mpeg",
             headers={"Cache-Control": "no-store"},
         )
@@ -330,10 +159,59 @@ def api_text_to_speech():
 
 @app.route("/api/article/<int:index>")
 def api_get_article(index: int):
-    articles = build_articles_payload(MAX_ARTICLES)
+    articles = build_articles_payload(
+        TAGESSCHAU_HOMEPAGE_API,
+        MAX_ARTICLES,
+        A2_CONTENT_BLOCK_TYPES,
+        CEFR_LEVELS,
+        REQUEST_TIMEOUT_SECONDS,
+        REQUEST_USER_AGENT,
+    )
     if not articles or index < 0 or index >= len(articles):
         return jsonify({"error": "Article not found"}), 404
     return jsonify(articles[index])
+
+
+@app.route("/api/cards/next")
+def api_cards_next():
+    card = CARDS_A2_DECK.next_card()
+    if not card:
+        return jsonify({"error": "No cards available"}), 404
+    return jsonify(card)
+
+
+@app.route("/api/cards/translate")
+def api_cards_translate():
+    word = request.args.get("word", "").strip()
+    if not word:
+        return jsonify({"error": "Missing word parameter."}), 400
+
+    translated = CARDS_A2_DECK.translation_for(
+        word,
+        lambda source_word: remote_translate(source_word, APP_TARGET_LANG, TRANSLATE_ENDPOINT, REQUEST_TIMEOUT_SECONDS),
+    )
+    if not translated:
+        translated = "Translation unavailable"
+
+    return jsonify({"source": word, "translation": translated, "target_lang": APP_TARGET_LANG})
+
+
+@app.route("/api/cards/feedback", methods=["POST"])
+def api_cards_feedback():
+    payload = request.get_json(silent=True) or {}
+    word = str(payload.get("word", "")).strip()
+    rating = str(payload.get("rating", "")).strip().lower()
+
+    if not word or not rating:
+        return jsonify({"error": "Missing word or rating in request body."}), 400
+
+    try:
+        updated_card = CARDS_A2_DECK.apply_feedback(word, rating)
+    except ValueError as exc:
+        return jsonify({"error": str(exc)}), 400
+
+    next_card = CARDS_A2_DECK.next_card()
+    return jsonify({"updated": updated_card, "next": next_card})
 
 
 if __name__ == "__main__":

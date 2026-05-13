@@ -1,0 +1,2049 @@
+cards:
+  Achtung:
+    box: 1
+  Adresse:
+    box: 1
+  Anfang:
+    box: 1
+  Ankunft:
+    box: 1
+  Anmeldung:
+    box: 1
+  Anrufbeantworter:
+    box: 1
+  Ansage:
+    box: 1
+  Anschluss:
+    box: 1
+  Antwort:
+    box: 2
+  Anzeige:
+    box: 1
+  Apartment:
+    box: 1
+  Apfel:
+    box: 2
+  Appetit:
+    box: 1
+  Arbeit:
+    box: 1
+  Arm:
+    box: 1
+  Auto:
+    box: 2
+  Baby:
+    box: 1
+  Bad:
+    box: 1
+  Bahn:
+    box: 1
+  Bahnhof:
+    box: 2
+  Bahnsteig:
+    box: 1
+  Balkon:
+    box: 1
+  Banane:
+    box: 1
+  Bar:
+    box: 1
+  Bauch:
+    box: 1
+  Baustelle:
+    box: 1
+  Beispiel:
+    box: 1
+  Bekannte:
+    box: 1
+  Beruf:
+    box: 2
+  Besuch:
+    box: 1
+  Bett:
+    box: 1
+  Bier:
+    box: 1
+  Bild:
+    box: 1
+  Birne:
+    box: 1
+  Bitten:
+    box: 1
+  Blick:
+    box: 1
+  Blume:
+    box: 1
+  Bluse:
+    box: 1
+  Bohne:
+    box: 1
+  Braten:
+    box: 2
+  Brief:
+    box: 1
+  Briefmarke:
+    box: 1
+  Brieftasche:
+    box: 1
+  Brot:
+    box: 1
+  Bruder:
+    box: 1
+  Brötchen:
+    box: 1
+  Buch:
+    box: 1
+  Bus:
+    box: 1
+  Butter:
+    box: 2
+  Böse:
+    box: 1
+  CD:
+    box: 0
+  CD-ROM:
+    box: 0
+  Café:
+    box: 0
+  Chef:
+    box: 0
+  Computer:
+    box: 0
+  Cousin:
+    box: 0
+  Cousine:
+    box: 0
+  Dach:
+    box: 0
+  Dame:
+    box: 0
+  Dank:
+    box: 0
+  Datum:
+    box: 0
+  Ding:
+    box: 0
+  Doppelzimmer:
+    box: 0
+  Dorf:
+    box: 0
+  Drucker:
+    box: 0
+  Durchsage:
+    box: 0
+  Durst:
+    box: 0
+  Dusche:
+    box: 0
+  E-Mail:
+    box: 0
+  Ecke:
+    box: 0
+  Ei:
+    box: 0
+  Eingang:
+    box: 0
+  Einladung:
+    box: 0
+  Eis:
+    box: 0
+  Eltern:
+    box: 0
+  Empfänger:
+    box: 0
+  Ende:
+    box: 0
+  Enkel:
+    box: 0
+  Entschuldigung:
+    box: 0
+  Erlaubnis:
+    box: 0
+  Erwachsene:
+    box: 0
+  Essen:
+    box: 0
+  Fahrer:
+    box: 0
+  Fahrkarte:
+    box: 0
+  Fahrrad:
+    box: 0
+  Falsch:
+    box: 0
+  Familie:
+    box: 0
+  Farbe:
+    box: 0
+  Fehler:
+    box: 0
+  Feier:
+    box: 0
+  Feierabend:
+    box: 0
+  Ferien:
+    box: 0
+  Fest:
+    box: 0
+  Feuer:
+    box: 0
+  Feuerwehr:
+    box: 0
+  Fieber:
+    box: 0
+  Film:
+    box: 0
+  Finger:
+    box: 0
+  Fisch:
+    box: 0
+  Flasche:
+    box: 0
+  Fleisch:
+    box: 0
+  Flohmarkt:
+    box: 0
+  Flughafen:
+    box: 0
+  Flugzeug:
+    box: 0
+  Flur:
+    box: 0
+  Fluss:
+    box: 0
+  Formular:
+    box: 0
+  Foto:
+    box: 0
+  Fotoapparat:
+    box: 0
+  Frage:
+    box: 0
+  Frau:
+    box: 0
+  Freizeit:
+    box: 0
+  Freund:
+    box: 0
+  Freundin:
+    box: 0
+  Frühstück:
+    box: 0
+  Fuß:
+    box: 0
+  Fußball:
+    box: 0
+  Führerschein:
+    box: 0
+  Führung:
+    box: 0
+  Gabel:
+    box: 0
+  Garage:
+    box: 0
+  Garten:
+    box: 0
+  Gast:
+    box: 0
+  Geburt:
+    box: 0
+  Gefährlich:
+    box: 0
+  Gegenteil:
+    box: 0
+  Geld:
+    box: 0
+  Geldbeutel:
+    box: 0
+  Gepäck:
+    box: 0
+  Gericht:
+    box: 0
+  Geschenk:
+    box: 0
+  Geschichte:
+    box: 0
+  Geschirr:
+    box: 0
+  Gesicht:
+    box: 0
+  Gespräch:
+    box: 0
+  Gesundheit:
+    box: 0
+  Getränk:
+    box: 0
+  Gewitter:
+    box: 0
+  Gitarre:
+    box: 0
+  Glas:
+    box: 0
+  Gleis:
+    box: 0
+  Glück:
+    box: 0
+  Glückwunsch:
+    box: 0
+  Gott:
+    box: 0
+  Großeltern:
+    box: 0
+  Großmutter:
+    box: 0
+  Großvater:
+    box: 0
+  Gruppe:
+    box: 0
+  Gruß:
+    box: 0
+  Größe:
+    box: 0
+  Grün:
+    box: 0
+  Haar:
+    box: 0
+  Halbpension:
+    box: 0
+  Halle:
+    box: 0
+  Hallo:
+    box: 0
+  Hals:
+    box: 0
+  Haltestelle:
+    box: 0
+  Hand:
+    box: 0
+  Handy:
+    box: 0
+  Hauptbahnhof:
+    box: 0
+  Haus:
+    box: 0
+  Hausaufgabe:
+    box: 0
+  Hausfrau:
+    box: 0
+  Haushalt:
+    box: 0
+  Hausmann:
+    box: 0
+  Heimat:
+    box: 0
+  Hemd:
+    box: 0
+  Herausforderung:
+    box: 0
+  Herd:
+    box: 0
+  Herr:
+    box: 0
+  Hilfe:
+    box: 0
+  Himmel:
+    box: 0
+  Hobby:
+    box: 0
+  Hochzeit:
+    box: 0
+  Hose:
+    box: 0
+  Hotel:
+    box: 0
+  Hund:
+    box: 0
+  Hunger:
+    box: 0
+  Hähnchen:
+    box: 0
+  Ihr:
+    box: 0
+  Information:
+    box: 0
+  Insel:
+    box: 0
+  Intelligent:
+    box: 0
+  Interesse:
+    box: 0
+  Internet:
+    box: 0
+  Interview:
+    box: 0
+  Jacke:
+    box: 0
+  Jahr:
+    box: 0
+  Januar:
+    box: 0
+  Juli:
+    box: 0
+  Juni:
+    box: 0
+  Kaffee:
+    box: 0
+  Kamera:
+    box: 0
+  Kaputt:
+    box: 0
+  Karte:
+    box: 0
+  Kartoffel:
+    box: 0
+  Kaufhaus:
+    box: 0
+  Kenntnisse:
+    box: 0
+  Kette:
+    box: 0
+  Kind:
+    box: 0
+  Kinderwagen:
+    box: 0
+  Kino:
+    box: 0
+  Kiosk:
+    box: 0
+  Kirche:
+    box: 0
+  Klasse:
+    box: 0
+  Kleid:
+    box: 0
+  Kleidung:
+    box: 0
+  Koffer:
+    box: 0
+  Kollege:
+    box: 0
+  Kopf:
+    box: 0
+  Krankenhaus:
+    box: 0
+  Krankenkasse:
+    box: 0
+  Kreditkarte:
+    box: 0
+  Kuchen:
+    box: 0
+  Kugelschreiber:
+    box: 0
+  Kultur:
+    box: 0
+  Kunde:
+    box: 0
+  Kurs:
+    box: 0
+  Käse:
+    box: 0
+  Körper:
+    box: 0
+  Küche:
+    box: 0
+  Kühlschrank:
+    box: 0
+  LKW:
+    box: 0
+  Laden:
+    box: 0
+  Land:
+    box: 0
+  Laptop:
+    box: 0
+  Leben:
+    box: 0
+  Lebensmittel:
+    box: 0
+  Leute:
+    box: 0
+  Licht:
+    box: 0
+  Lieblings-:
+    box: 0
+  Lied:
+    box: 0
+  Limo:
+    box: 0
+  Lippe:
+    box: 0
+  Liste:
+    box: 0
+  Lohn:
+    box: 0
+  Lokal:
+    box: 0
+  Löffel:
+    box: 0
+  Lösung:
+    box: 0
+  Magen:
+    box: 0
+  Mann:
+    box: 0
+  Mantel:
+    box: 0
+  Markt:
+    box: 0
+  Maschine:
+    box: 0
+  Medikament:
+    box: 0
+  Meer:
+    box: 0
+  Meinung:
+    box: 0
+  Mensch:
+    box: 0
+  Messer:
+    box: 0
+  Miete:
+    box: 0
+  Milch:
+    box: 0
+  Minute:
+    box: 0
+  Mitte:
+    box: 0
+  Moment:
+    box: 0
+  Monat:
+    box: 0
+  Morgen:
+    box: 0
+  Motorrad:
+    box: 0
+  Mund:
+    box: 0
+  Museum:
+    box: 0
+  Musik:
+    box: 0
+  Mutter:
+    box: 0
+  Mutti:
+    box: 0
+  Mädchen:
+    box: 0
+  Möbel:
+    box: 0
+  Nachbar:
+    box: 0
+  Nachricht:
+    box: 0
+  Nacht:
+    box: 0
+  Nachtisch:
+    box: 0
+  Nadel:
+    box: 0
+  Name:
+    box: 0
+  Natur:
+    box: 0
+  Notiz:
+    box: 0
+  Nummer:
+    box: 0
+  Obst:
+    box: 0
+  Ohr:
+    box: 0
+  Oma:
+    box: 0
+  Onkel:
+    box: 0
+  Opa:
+    box: 0
+  Ordnung:
+    box: 0
+  Ort:
+    box: 0
+  Paar:
+    box: 0
+  Paket:
+    box: 0
+  Panne:
+    box: 0
+  Papier:
+    box: 0
+  Papiere:
+    box: 0
+  Paprika:
+    box: 0
+  Parfüm:
+    box: 0
+  Park:
+    box: 0
+  Party:
+    box: 0
+  Pass:
+    box: 0
+  Pause:
+    box: 0
+  Pension:
+    box: 0
+  Person:
+    box: 0
+  Pfeffer:
+    box: 0
+  Pferd:
+    box: 0
+  Picknick:
+    box: 0
+  Pilz:
+    box: 0
+  Plan:
+    box: 0
+  Plastik:
+    box: 0
+  Platz:
+    box: 0
+  Polizei:
+    box: 0
+  Pommes frites:
+    box: 0
+  Portion:
+    box: 0
+  Post:
+    box: 0
+  Postleitzahl:
+    box: 0
+  Preis:
+    box: 0
+  Problem:
+    box: 0
+  Produkt:
+    box: 0
+  Programm:
+    box: 0
+  Projekt:
+    box: 0
+  Prospekt:
+    box: 0
+  Prüfung:
+    box: 0
+  Putzen:
+    box: 0
+  Qualität:
+    box: 0
+  Quittung:
+    box: 0
+  Rad:
+    box: 0
+  Radio:
+    box: 0
+  Rathaus:
+    box: 0
+  Raucher:
+    box: 0
+  Raum:
+    box: 0
+  Rechnung:
+    box: 0
+  Regen:
+    box: 0
+  Reifen:
+    box: 0
+  Reinigung:
+    box: 0
+  Reis:
+    box: 0
+  Reise:
+    box: 0
+  Reisebüro:
+    box: 0
+  Reisepass:
+    box: 0
+  Renovieren:
+    box: 0
+  Reparatur:
+    box: 0
+  Reservieren:
+    box: 0
+  Restaurant:
+    box: 0
+  Rezept:
+    box: 0
+  Ring:
+    box: 0
+  Rock:
+    box: 0
+  Rose:
+    box: 0
+  Rucksack:
+    box: 0
+  Ruhe:
+    box: 0
+  Rundgang:
+    box: 0
+  Rücken:
+    box: 0
+  S-Bahn:
+    box: 0
+  Saft:
+    box: 0
+  Salat:
+    box: 0
+  Salz:
+    box: 0
+  Satz:
+    box: 0
+  Schade:
+    box: 0
+  Schalter:
+    box: 0
+  Schiff:
+    box: 0
+  Schild:
+    box: 0
+  Schinken:
+    box: 0
+  Schlafzimmer:
+    box: 0
+  Schloss:
+    box: 0
+  Schlüssel:
+    box: 0
+  Schnee:
+    box: 0
+  Schnupfen:
+    box: 0
+  Schokolade:
+    box: 0
+  Schrank:
+    box: 0
+  Schuh:
+    box: 0
+  Schule:
+    box: 0
+  Schwester:
+    box: 0
+  Schwimmbad:
+    box: 0
+  Schüler:
+    box: 0
+  See:
+    box: 0
+  Sehenswürdigkeit:
+    box: 0
+  Seife:
+    box: 0
+  Seite:
+    box: 0
+  Sekunde:
+    box: 0
+  Senioren:
+    box: 0
+  Service:
+    box: 0
+  Sessel:
+    box: 0
+  Sie:
+    box: 0
+  Situation:
+    box: 0
+  Ski:
+    box: 0
+  Sofa:
+    box: 0
+  Sohn:
+    box: 0
+  Sommer:
+    box: 0
+  Sonne:
+    box: 0
+  Spaß:
+    box: 0
+  Speisekarte:
+    box: 0
+  Spielplatz:
+    box: 0
+  Sport:
+    box: 0
+  Sprache:
+    box: 0
+  Staat:
+    box: 0
+  Stadt:
+    box: 0
+  Stadtplan:
+    box: 0
+  Star:
+    box: 0
+  Stau:
+    box: 0
+  Stein:
+    box: 0
+  Stelle:
+    box: 0
+  Stempel:
+    box: 0
+  Stern:
+    box: 0
+  Steuer:
+    box: 0
+  Stift:
+    box: 0
+  Stimme:
+    box: 0
+  Stock:
+    box: 0
+  Stoff:
+    box: 0
+  Strand:
+    box: 0
+  Straße:
+    box: 0
+  Straßenbahn:
+    box: 0
+  Stress:
+    box: 0
+  Student:
+    box: 0
+  Studium:
+    box: 0
+  Stuhl:
+    box: 0
+  Stunde:
+    box: 0
+  Stück:
+    box: 0
+  Supermarkt:
+    box: 0
+  Suppe:
+    box: 0
+  Süden:
+    box: 0
+  Tablette:
+    box: 0
+  Tafel:
+    box: 0
+  Tag:
+    box: 0
+  Tankstelle:
+    box: 0
+  Tante:
+    box: 0
+  Tanz:
+    box: 0
+  Tasche:
+    box: 0
+  Taschengeld:
+    box: 0
+  Tasse:
+    box: 0
+  Tastatur:
+    box: 0
+  Taxi:
+    box: 0
+  Tee:
+    box: 0
+  Teil:
+    box: 0
+  Telefon:
+    box: 0
+  Teller:
+    box: 0
+  Tennis:
+    box: 0
+  Termin:
+    box: 0
+  Test:
+    box: 0
+  Text:
+    box: 0
+  Thema:
+    box: 0
+  Ticket:
+    box: 0
+  Tier:
+    box: 0
+  Tisch:
+    box: 0
+  Tochter:
+    box: 0
+  Toilette:
+    box: 0
+  Tomate:
+    box: 0
+  Topf:
+    box: 0
+  Torte:
+    box: 0
+  Tour:
+    box: 0
+  Tourist:
+    box: 0
+  Training:
+    box: 0
+  Traum:
+    box: 0
+  Treppe:
+    box: 0
+  Trinkgeld:
+    box: 0
+  Tschüss:
+    box: 0
+  Turm:
+    box: 0
+  Typ:
+    box: 0
+  Tür:
+    box: 0
+  U-Bahn:
+    box: 0
+  Uhr:
+    box: 0
+  Unfall:
+    box: 0
+  Universität:
+    box: 0
+  Unterkunft:
+    box: 0
+  Unterricht:
+    box: 0
+  Unterschrift:
+    box: 0
+  Unterwegs:
+    box: 0
+  Urlaub:
+    box: 0
+  Vase:
+    box: 0
+  Vater:
+    box: 0
+  Vati:
+    box: 0
+  Veranstaltung:
+    box: 0
+  Verkäufer:
+    box: 0
+  Vermieter:
+    box: 0
+  Versicherung:
+    box: 0
+  Verspätung:
+    box: 0
+  Vertrag:
+    box: 0
+  Vetter:
+    box: 0
+  Viertel:
+    box: 0
+  Visum:
+    box: 0
+  Vogel:
+    box: 0
+  Volkshochschule:
+    box: 0
+  Voll:
+    box: 0
+  Vorname:
+    box: 0
+  Vorschlag:
+    box: 0
+  Vorsicht:
+    box: 0
+  WC:
+    box: 0
+  Wagen:
+    box: 0
+  Wald:
+    box: 0
+  Waschmaschine:
+    box: 0
+  Wasser:
+    box: 0
+  Weg:
+    box: 0
+  Wein:
+    box: 0
+  Welcher:
+    box: 0
+  Welt:
+    box: 0
+  Werkstatt:
+    box: 0
+  Werkzeug:
+    box: 0
+  Wert:
+    box: 0
+  Wiese:
+    box: 0
+  Wind:
+    box: 0
+  Wissen:
+    box: 0
+  Wissensdurst:
+    box: 0
+  Woche:
+    box: 0
+  Wochenende:
+    box: 0
+  Wohnung:
+    box: 0
+  Wohnzimmer:
+    box: 0
+  Wolke:
+    box: 0
+  Wort:
+    box: 0
+  Wunder:
+    box: 0
+  Wunsch:
+    box: 0
+  Wurst:
+    box: 0
+  Wut:
+    box: 0
+  Zahl:
+    box: 0
+  Zahn:
+    box: 0
+  Zahnarzt:
+    box: 0
+  Zeichen:
+    box: 0
+  Zeit:
+    box: 0
+  Zeitschrift:
+    box: 0
+  Zeitung:
+    box: 0
+  Zentrum:
+    box: 0
+  Zettel:
+    box: 0
+  Zeugnis:
+    box: 0
+  Ziehen:
+    box: 0
+  Ziel:
+    box: 0
+  Zimmer:
+    box: 0
+  Zitrone:
+    box: 0
+  Zoo:
+    box: 0
+  Zucker:
+    box: 0
+  Zuerst:
+    box: 0
+  Zufrieden:
+    box: 0
+  Zug:
+    box: 0
+  Zukunft:
+    box: 0
+  Zusammen:
+    box: 0
+  Zuschauer:
+    box: 0
+  Zustand:
+    box: 0
+  Zutritt:
+    box: 0
+  Zwei:
+    box: 0
+  Zwiebel:
+    box: 0
+  ab:
+    box: 0
+  aber:
+    box: 0
+  abgeben:
+    box: 0
+  abholen:
+    box: 0
+  abschließen:
+    box: 0
+  all-:
+    box: 0
+  allein:
+    box: 0
+  als:
+    box: 0
+  also:
+    box: 0
+  alt:
+    box: 0
+  an:
+    box: 0
+  anbieten:
+    box: 0
+  ander-:
+    box: 0
+  anfangen:
+    box: 0
+  ankommen:
+    box: 0
+  anmachen:
+    box: 0
+  anmelden:
+    box: 0
+  anrufen:
+    box: 0
+  antworten:
+    box: 0
+  anziehen:
+    box: 0
+  arbeiten:
+    box: 0
+  arbeitslos:
+    box: 0
+  backen:
+    box: 0
+  baden:
+    box: 0
+  bauen:
+    box: 0
+  beantworten:
+    box: 0
+  bedeuten:
+    box: 0
+  beeilen (sich):
+    box: 0
+  beenden:
+    box: 0
+  beginnen:
+    box: 0
+  begründen:
+    box: 0
+  bekannt:
+    box: 0
+  bekommen:
+    box: 0
+  benutzen:
+    box: 0
+  besichtigen:
+    box: 0
+  besser:
+    box: 0
+  best-:
+    box: 0
+  bestellen:
+    box: 0
+  besuchen:
+    box: 0
+  betreuen:
+    box: 0
+  bezahlen:
+    box: 0
+  billig:
+    box: 0
+  bis:
+    box: 0
+  bisschen:
+    box: 0
+  bitte:
+    box: 0
+  bitter:
+    box: 0
+  bleiben:
+    box: 0
+  brauchen:
+    box: 0
+  breit:
+    box: 0
+  bringen:
+    box: 0
+  buchstabieren:
+    box: 0
+  da:
+    box: 0
+  dabei:
+    box: 0
+  dafür:
+    box: 0
+  dagegen:
+    box: 0
+  daher:
+    box: 0
+  dahin:
+    box: 0
+  damals:
+    box: 0
+  damit:
+    box: 0
+  danach:
+    box: 0
+  daneben:
+    box: 0
+  danke:
+    box: 0
+  danken:
+    box: 0
+  dann:
+    box: 0
+  daran:
+    box: 0
+  darauf:
+    box: 0
+  darin:
+    box: 0
+  darum:
+    box: 0
+  darunter:
+    box: 0
+  darüber:
+    box: 0
+  das:
+    box: 0
+  dauern:
+    box: 0
+  davon:
+    box: 0
+  dazu:
+    box: 0
+  dein:
+    box: 0
+  denken:
+    box: 0
+  denn:
+    box: 0
+  der:
+    box: 0
+  deshalb:
+    box: 0
+  deutlich:
+    box: 0
+  dick:
+    box: 0
+  direkt:
+    box: 0
+  doch:
+    box: 0
+  dort:
+    box: 0
+  draußen:
+    box: 0
+  dringend:
+    box: 0
+  drinnen:
+    box: 0
+  drucken:
+    box: 0
+  drüben:
+    box: 0
+  drücken:
+    box: 0
+  dumm:
+    box: 0
+  dunkel:
+    box: 0
+  durch:
+    box: 0
+  duschen:
+    box: 0
+  dürfen:
+    box: 0
+  echt:
+    box: 0
+  egal:
+    box: 0
+  eigen-:
+    box: 0
+  eigentlich:
+    box: 0
+  ein-:
+    box: 0
+  einfach:
+    box: 0
+  einladen:
+    box: 0
+  einmal:
+    box: 0
+  einpacken:
+    box: 0
+  einsteigen:
+    box: 0
+  eintragen:
+    box: 0
+  einverstanden:
+    box: 0
+  einzeln:
+    box: 0
+  einziehen:
+    box: 0
+  empfehlen:
+    box: 0
+  endlich:
+    box: 0
+  eng:
+    box: 0
+  entschuldigen:
+    box: 0
+  erklären:
+    box: 0
+  erlauben:
+    box: 0
+  erleben:
+    box: 0
+  erledigen:
+    box: 0
+  erzählen:
+    box: 0
+  etwa:
+    box: 0
+  etwas:
+    box: 0
+  euch:
+    box: 0
+  euer:
+    box: 0
+  fahren:
+    box: 0
+  fangen:
+    box: 0
+  fast:
+    box: 0
+  fehlen:
+    box: 0
+  feiern:
+    box: 0
+  fernsehen:
+    box: 0
+  fertig:
+    box: 0
+  fett:
+    box: 0
+  finden:
+    box: 0
+  fleißig:
+    box: 0
+  fliegen:
+    box: 0
+  fragen:
+    box: 0
+  frei:
+    box: 0
+  fremd:
+    box: 0
+  freuen:
+    box: 0
+  frisch:
+    box: 0
+  froh:
+    box: 0
+  früh:
+    box: 0
+  früher:
+    box: 0
+  fühlen:
+    box: 0
+  füllen:
+    box: 0
+  für:
+    box: 0
+  ganz:
+    box: 0
+  geben:
+    box: 0
+  geboren:
+    box: 0
+  gefallen:
+    box: 0
+  gegen:
+    box: 0
+  gegenüber:
+    box: 0
+  gehen:
+    box: 0
+  gehören:
+    box: 0
+  gelb:
+    box: 0
+  gemütlich:
+    box: 0
+  genau:
+    box: 0
+  genug:
+    box: 0
+  gerade:
+    box: 0
+  geradeaus:
+    box: 0
+  gern:
+    box: 0
+  gesund:
+    box: 0
+  gewinnen:
+    box: 0
+  glauben:
+    box: 0
+  gleich:
+    box: 0
+  glücklich:
+    box: 0
+  grad:
+    box: 0
+  gratulieren:
+    box: 0
+  grillen:
+    box: 0
+  groß:
+    box: 0
+  grüßen:
+    box: 0
+  gut:
+    box: 0
+  günstig:
+    box: 0
+  haben:
+    box: 0
+  halten:
+    box: 0
+  hart:
+    box: 0
+  heiraten:
+    box: 0
+  heiß:
+    box: 0
+  heißen:
+    box: 0
+  helfen:
+    box: 0
+  hell:
+    box: 0
+  her:
+    box: 0
+  herzlich:
+    box: 0
+  heute:
+    box: 0
+  hier:
+    box: 0
+  hinten:
+    box: 0
+  hinter:
+    box: 0
+  hoch:
+    box: 0
+  hoffen:
+    box: 0
+  holen:
+    box: 0
+  husten:
+    box: 0
+  hängen:
+    box: 0
+  hässlich:
+    box: 0
+  höflich:
+    box: 0
+  hören:
+    box: 0
+  ich:
+    box: 0
+  ihm:
+    box: 0
+  ihn:
+    box: 0
+  ihnen:
+    box: 0
+  immer:
+    box: 0
+  in:
+    box: 0
+  innen:
+    box: 0
+  innerhalb:
+    box: 0
+  interessant:
+    box: 0
+  interessieren:
+    box: 0
+  ja:
+    box: 0
+  kalt:
+    box: 0
+  kaufen:
+    box: 0
+  kein:
+    box: 0
+  kennen:
+    box: 0
+  kennenlernen:
+    box: 0
+  klein:
+    box: 0
+  klettern:
+    box: 0
+  klug:
+    box: 0
+  kochen:
+    box: 0
+  kommen:
+    box: 0
+  korrigieren:
+    box: 0
+  kosten:
+    box: 0
+  krank:
+    box: 0
+  kurz:
+    box: 0
+  können:
+    box: 0
+  kümmern:
+    box: 0
+  lachen:
+    box: 0
+  lang:
+    box: 0
+  lange:
+    box: 0
+  langsam:
+    box: 0
+  langweilig:
+    box: 0
+  lassen:
+    box: 0
+  laufen:
+    box: 0
+  laut:
+    box: 0
+  leer:
+    box: 0
+  legen:
+    box: 0
+  leicht:
+    box: 0
+  leise:
+    box: 0
+  lernen:
+    box: 0
+  lesen:
+    box: 0
+  letzte:
+    box: 0
+  lieb:
+    box: 0
+  lieben:
+    box: 0
+  liefern:
+    box: 0
+  liegen:
+    box: 0
+  machen:
+    box: 0
+  man:
+    box: 0
+  manche:
+    box: 0
+  mehr:
+    box: 0
+  mein:
+    box: 0
+  meinen:
+    box: 0
+  meist-:
+    box: 0
+  mieten:
+    box: 0
+  mischen:
+    box: 0
+  mit:
+    box: 0
+  mitbringen:
+    box: 0
+  mitkommen:
+    box: 0
+  mitmachen:
+    box: 0
+  mitnehmen:
+    box: 0
+  modern:
+    box: 0
+  möchte:
+    box: 0
+  mögen:
+    box: 0
+  möglich:
+    box: 0
+  müde:
+    box: 0
+  müssen:
+    box: 0
+  nach:
+    box: 0
+  nah:
+    box: 0
+  nass:
+    box: 0
+  natürlich:
+    box: 0
+  neben:
+    box: 0
+  nehmen:
+    box: 0
+  nein:
+    box: 0
+  nennen:
+    box: 0
+  nervös:
+    box: 0
+  nett:
+    box: 0
+  neu:
+    box: 0
+  neun:
+    box: 0
+  nicht:
+    box: 0
+  nichts:
+    box: 0
+  nie:
+    box: 0
+  niedrig:
+    box: 0
+  niemand:
+    box: 0
+  noch:
+    box: 0
+  normal:
+    box: 0
+  nur:
+    box: 0
+  nächste:
+    box: 0
+  nützlich:
+    box: 0
+  ob:
+    box: 0
+  oben:
+    box: 0
+  oder:
+    box: 0
+  offen:
+    box: 0
+  oft:
+    box: 0
+  ohne:
+    box: 0
+  okay:
+    box: 0
+  ordnen:
+    box: 0
+  packen:
+    box: 0
+  parken:
+    box: 0
+  passen:
+    box: 0
+  passieren:
+    box: 0
+  per:
+    box: 0
+  planen:
+    box: 0
+  plötzlich:
+    box: 0
+  preiswert:
+    box: 0
+  privat:
+    box: 0
+  pro:
+    box: 0
+  probieren:
+    box: 0
+  pünktlich:
+    box: 0
+  rauchen:
+    box: 0
+  rechnen:
+    box: 0
+  rechts:
+    box: 0
+  regnen:
+    box: 0
+  reich:
+    box: 0
+  reisen:
+    box: 0
+  reiten:
+    box: 0
+  reparieren:
+    box: 0
+  richtig:
+    box: 0
+  riechen:
+    box: 0
+  rufen:
+    box: 0
+  ruhig:
+    box: 0
+  sagen:
+    box: 0
+  sammeln:
+    box: 0
+  sauber:
+    box: 0
+  sauer:
+    box: 0
+  schaffen:
+    box: 0
+  scharf:
+    box: 0
+  scheinen:
+    box: 0
+  schenken:
+    box: 0
+  schicken:
+    box: 0
+  schlafen:
+    box: 0
+  schlecht:
+    box: 0
+  schließen:
+    box: 0
+  schlimm:
+    box: 0
+  schmecken:
+    box: 0
+  schmerz:
+    box: 0
+  schmuck:
+    box: 0
+  schmutzig:
+    box: 0
+  schneiden:
+    box: 0
+  schneien:
+    box: 0
+  schnell:
+    box: 0
+  schon:
+    box: 0
+  schrecklich:
+    box: 0
+  schreiben:
+    box: 0
+  schreien:
+    box: 0
+  schriftlich:
+    box: 0
+  schwach:
+    box: 0
+  schwarz:
+    box: 0
+  schwer:
+    box: 0
+  schwimmen:
+    box: 0
+  schädlich:
+    box: 0
+  schön:
+    box: 0
+  sehen:
+    box: 0
+  sehr:
+    box: 0
+  sein:
+    box: 0
+  seit:
+    box: 0
+  selbst:
+    box: 0
+  selten:
+    box: 0
+  senden:
+    box: 0
+  setzen:
+    box: 0
+  sicher:
+    box: 0
+  singen:
+    box: 0
+  sitzen:
+    box: 0
+  so:
+    box: 0
+  sofort:
+    box: 0
+  solange:
+    box: 0
+  sollen:
+    box: 0
+  sonnig:
+    box: 0
+  sonst:
+    box: 0
+  spazieren gehen:
+    box: 0
+  spielen:
+    box: 0
+  sprechen:
+    box: 0
+  spät:
+    box: 0
+  später:
+    box: 0
+  stark:
+    box: 0
+  stattfinden:
+    box: 0
+  stehen:
+    box: 0
+  stehlen:
+    box: 0
+  steigen:
+    box: 0
+  stellen:
+    box: 0
+  sterben:
+    box: 0
+  still:
+    box: 0
+  stolz:
+    box: 0
+  stoppen:
+    box: 0
+  stressig:
+    box: 0
+  studieren:
+    box: 0
+  stören:
+    box: 0
+  suchen:
+    box: 0
+  surfen:
+    box: 0
+  süß:
+    box: 0
+  tanken:
+    box: 0
+  tanzen:
+    box: 0
+  teilnehmen:
+    box: 0
+  telefonieren:
+    box: 0
+  teuer:
+    box: 0
+  tief:
+    box: 0
+  toll:
+    box: 0
+  tot:
+    box: 0
+  tragen:
+    box: 0
+  trainieren:
+    box: 0
+  treffen:
+    box: 0
+  trinken:
+    box: 0
+  trocken:
+    box: 0
+  träumen:
+    box: 0
+  tun:
+    box: 0
+  typisch:
+    box: 0
+  türkisch:
+    box: 0
+  um:
+    box: 0
+  umsteigen:
+    box: 0
+  umziehen:
+    box: 0
+  unbedingt:
+    box: 0
+  und:
+    box: 0
+  unten:
+    box: 0
+  unter:
+    box: 0
+  unterhalten:
+    box: 0
+  untern:
+    box: 0
+  unterschreiben:
+    box: 0
+  untersuchen:
+    box: 0
+  verabredet:
+    box: 0
+  verbieten:
+    box: 0
+  verdienen:
+    box: 0
+  vereinbaren:
+    box: 0
+  vergessen:
+    box: 0
+  vergleichen:
+    box: 0
+  vergrößern:
+    box: 0
+  verhaftet:
+    box: 0
+  verheiratet:
+    box: 0
+  verkaufen:
+    box: 0
+  verlassen:
+    box: 0
+  verletzt:
+    box: 0
+  verlieren:
+    box: 0
+  vermieten:
+    box: 0
+  verpassen:
+    box: 0
+  verreisen:
+    box: 0
+  verstehen:
+    box: 0
+  versuchen:
+    box: 0
+  viel:
+    box: 0
+  vielleicht:
+    box: 0
+  von:
+    box: 0
+  vor:
+    box: 0
+  voraus:
+    box: 0
+  vorbei:
+    box: 0
+  vorbereiten:
+    box: 0
+  vorgestern:
+    box: 0
+  vorher:
+    box: 0
+  vorn:
+    box: 0
+  vorstellen:
+    box: 0
+  wahr:
+    box: 0
+  wahrscheinlich:
+    box: 0
+  wandern:
+    box: 0
+  wann:
+    box: 0
+  warm:
+    box: 0
+  warten:
+    box: 0
+  warum:
+    box: 0
+  was:
+    box: 0
+  waschen:
+    box: 0
+  wecken:
+    box: 0
+  weich:
+    box: 0
+  weil:
+    box: 0
+  weinen:
+    box: 0
+  weit:
+    box: 0
+  weiter:
+    box: 0
+  weiß:
+    box: 0
+  wenig:
+    box: 0
+  wenn:
+    box: 0
+  wer:
+    box: 0
+  werden:
+    box: 0
+  werfen:
+    box: 0
+  wichtig:
+    box: 0
+  wie:
+    box: 0
+  wieder:
+    box: 0
+  wiederholen:
+    box: 0
+  wiegen:
+    box: 0
+  wieviel:
+    box: 0
+  willkommen:
+    box: 0
+  windig:
+    box: 0
+  wir:
+    box: 0
+  wird:
+    box: 0
+  wirklich:
+    box: 0
+  witzig:
+    box: 0
+  wo:
+    box: 0
+  woher:
+    box: 0
+  wohin:
+    box: 0
+  wohnen:
+    box: 0
+  wolkig:
+    box: 0
+  wollen:
+    box: 0
+  wunderbar:
+    box: 0
+  wählen:
+    box: 0
+  wünschen:
+    box: 0
+  zahlen:
+    box: 0
+  zeichnen:
+    box: 0
+  zeigen:
+    box: 0
+  zu:
+    box: 0
+  zuhören:
+    box: 0
+  zuletzt:
+    box: 0
+  zumachen:
+    box: 0
+  zwischen:
+    box: 0
+  öffnen:
+    box: 0
+  über:
+    box: 0
+  überall:
+    box: 0
+  übermorgen:
+    box: 0
+  übernachten:
+    box: 0
+  überweisen:
+    box: 0
+translations:
+  Bahnhof: Train Station
+  Voll: Full
+  Zettel: Record time
+  entschuldigen: apologises
+  still: silent
+  tot: tot
+  verhaftet: arrested

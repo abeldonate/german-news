@@ -21,6 +21,13 @@ features:
     b2: data/b2.txt
     c1: data/c1.txt
 
+  # YAML persistence used by the A2 Leitner deck.
+  cards_state_file: data/cards_a2_state.yml
+
+  # Maximum number of words active (boxes 1-5) at any time.
+  # New words are introduced from box 0 as this headroom frees up.
+  leitner_box0_limit: 50
+
   # Block types from the Tagesschau API content array to include as article text.
   # Known types: text, headline, box, quotation, video, related
   content_block_types:

@@ -24,6 +24,11 @@ features:
   # YAML persistence used by the A2 Leitner deck.
   cards_state_file: data/cards_a2_state.yml
 
+  # Fill-in phrase packs by CEFR level.
+  fill_in_level_files:
+    a1: data/fill_in_a1.yml
+    a2: data/fill_in_a2.yml
+
   # Maximum number of words active (boxes 1-5) at any time.
   # New words are introduced from box 0 as this headroom frees up.
   leitner_box0_limit: 50

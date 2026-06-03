@@ -32,7 +32,7 @@ cards:
   Auto:
     box: 5
   Baby:
-    box: 4
+    box: 2
   Bad:
     box: 5
   Bahn:
@@ -54,7 +54,7 @@ cards:
   Beispiel:
     box: 5
   Bekannte:
-    box: 5
+    box: 2
   Beruf:
     box: 5
   Besuch:
@@ -74,9 +74,9 @@ cards:
   Blume:
     box: 5
   Bluse:
-    box: 5
+    box: 2
   Bohne:
-    box: 4
+    box: 5
   Braten:
     box: 5
   Brief:
@@ -112,19 +112,19 @@ cards:
   Cousin:
     box: 0
   Cousine:
-    box: 0
+    box: 1
   Dach:
     box: 0
   Dame:
-    box: 2
+    box: 3
   Dank:
-    box: 1
+    box: 2
   Datum:
-    box: 0
+    box: 2
   Ding:
     box: 0
   Doppelzimmer:
-    box: 0
+    box: 4
   Dorf:
     box: 0
   Drucker:
@@ -140,9 +140,9 @@ cards:
   Ecke:
     box: 0
   Ei:
-    box: 0
+    box: 2
   Eingang:
-    box: 0
+    box: 2
   Einladung:
     box: 0
   Eis:
@@ -150,13 +150,13 @@ cards:
   Eltern:
     box: 2
   Empfänger:
-    box: 0
+    box: 1
   Ende:
     box: 0
   Enkel:
     box: 0
   Entschuldigung:
-    box: 1
+    box: 3
   Erlaubnis:
     box: 0
   Erwachsene:
@@ -172,7 +172,7 @@ cards:
   Falsch:
     box: 0
   Familie:
-    box: 0
+    box: 2
   Farbe:
     box: 0
   Fehler:
@@ -192,21 +192,21 @@ cards:
   Fieber:
     box: 0
   Film:
-    box: 0
+    box: 2
   Finger:
-    box: 1
+    box: 3
   Fisch:
     box: 0
   Flasche:
-    box: 0
+    box: 1
   Fleisch:
     box: 0
   Flohmarkt:
-    box: 0
-  Flughafen:
     box: 1
+  Flughafen:
+    box: 2
   Flugzeug:
-    box: 0
+    box: 2
   Flur:
     box: 0
   Fluss:
@@ -224,7 +224,7 @@ cards:
   Freizeit:
     box: 0
   Freund:
-    box: 2
+    box: 3
   Freundin:
     box: 0
   Frühstück:
@@ -240,31 +240,31 @@ cards:
   Gabel:
     box: 0
   Garage:
-    box: 0
+    box: 1
   Garten:
     box: 0
   Gast:
     box: 0
   Geburt:
-    box: 0
+    box: 3
   Gefährlich:
     box: 0
   Gegenteil:
-    box: 0
+    box: 1
   Geld:
-    box: 0
+    box: 2
   Geldbeutel:
     box: 0
   Gepäck:
     box: 0
   Gericht:
-    box: 0
+    box: 1
   Geschenk:
-    box: 0
+    box: 1
   Geschichte:
     box: 0
   Geschirr:
-    box: 0
+    box: 2
   Gesicht:
     box: 0
   Gespräch:
@@ -276,9 +276,9 @@ cards:
   Gewitter:
     box: 0
   Gitarre:
-    box: 0
+    box: 3
   Glas:
-    box: 1
+    box: 2
   Gleis:
     box: 0
   Glück:
@@ -286,11 +286,11 @@ cards:
   Glückwunsch:
     box: 0
   Gott:
-    box: 1
+    box: 2
   Großeltern:
     box: 0
   Großmutter:
-    box: 2
+    box: 3
   Großvater:
     box: 0
   Gruppe:
@@ -308,15 +308,15 @@ cards:
   Halle:
     box: 0
   Hallo:
-    box: 0
+    box: 2
   Hals:
     box: 0
   Haltestelle:
-    box: 0
+    box: 1
   Hand:
-    box: 0
+    box: 2
   Handy:
-    box: 0
+    box: 2
   Hauptbahnhof:
     box: 0
   Haus:
@@ -326,7 +326,7 @@ cards:
   Hausfrau:
     box: 0
   Haushalt:
-    box: 0
+    box: 1
   Hausmann:
     box: 0
   Heimat:
@@ -338,7 +338,7 @@ cards:
   Herd:
     box: 0
   Herr:
-    box: 0
+    box: 2
   Hilfe:
     box: 0
   Himmel:
@@ -350,19 +350,19 @@ cards:
   Hose:
     box: 0
   Hotel:
-    box: 0
+    box: 2
   Hund:
     box: 0
   Hunger:
-    box: 0
+    box: 2
   Hähnchen:
-    box: 0
+    box: 3
   Ihr:
     box: 0
   Information:
-    box: 0
+    box: 3
   Insel:
-    box: 0
+    box: 2
   Intelligent:
     box: 0
   Interesse:
@@ -382,11 +382,11 @@ cards:
   Juni:
     box: 0
   Kaffee:
-    box: 0
+    box: 1
   Kamera:
     box: 0
   Kaputt:
-    box: 0
+    box: 2
   Karte:
     box: 0
   Kartoffel:
@@ -394,19 +394,19 @@ cards:
   Kaufhaus:
     box: 0
   Kenntnisse:
-    box: 0
+    box: 3
   Kette:
     box: 0
   Kind:
     box: 0
   Kinderwagen:
-    box: 0
+    box: 3
   Kino:
     box: 0
   Kiosk:
     box: 0
   Kirche:
-    box: 2
+    box: 4
   Klasse:
     box: 0
   Kleid:
@@ -438,21 +438,21 @@ cards:
   Käse:
     box: 0
   Körper:
-    box: 1
+    box: 4
   Küche:
     box: 0
   Kühlschrank:
-    box: 0
+    box: 1
   LKW:
-    box: 0
+    box: 3
   Laden:
     box: 0
   Land:
-    box: 0
+    box: 2
   Laptop:
     box: 0
   Leben:
-    box: 0
+    box: 1
   Lebensmittel:
     box: 0
   Leute:
@@ -476,7 +476,7 @@ cards:
   Löffel:
     box: 0
   Lösung:
-    box: 0
+    box: 1
   Magen:
     box: 0
   Mann:
@@ -488,7 +488,7 @@ cards:
   Maschine:
     box: 0
   Medikament:
-    box: 0
+    box: 1
   Meer:
     box: 0
   Meinung:
@@ -496,7 +496,7 @@ cards:
   Mensch:
     box: 0
   Messer:
-    box: 0
+    box: 1
   Miete:
     box: 0
   Milch:
@@ -508,7 +508,7 @@ cards:
   Moment:
     box: 0
   Monat:
-    box: 0
+    box: 2
   Morgen:
     box: 0
   Motorrad:
@@ -542,7 +542,7 @@ cards:
   Natur:
     box: 0
   Notiz:
-    box: 0
+    box: 2
   Nummer:
     box: 0
   Obst:
@@ -558,13 +558,13 @@ cards:
   Ordnung:
     box: 0
   Ort:
-    box: 0
+    box: 3
   Paar:
     box: 0
   Paket:
     box: 0
   Panne:
-    box: 0
+    box: 2
   Papier:
     box: 0
   Papiere:
@@ -576,13 +576,13 @@ cards:
   Park:
     box: 0
   Party:
-    box: 1
+    box: 2
   Pass:
     box: 0
   Pause:
-    box: 0
+    box: 2
   Pension:
-    box: 0
+    box: 1
   Person:
     box: 0
   Pfeffer:
@@ -590,9 +590,9 @@ cards:
   Pferd:
     box: 0
   Picknick:
-    box: 0
+    box: 2
   Pilz:
-    box: 1
+    box: 2
   Plan:
     box: 0
   Plastik:
@@ -602,21 +602,21 @@ cards:
   Polizei:
     box: 0
   Pommes frites:
-    box: 1
+    box: 2
   Portion:
     box: 0
   Post:
     box: 0
   Postleitzahl:
-    box: 0
+    box: 3
   Preis:
-    box: 0
+    box: 2
   Problem:
     box: 0
   Produkt:
     box: 0
   Programm:
-    box: 0
+    box: 2
   Projekt:
     box: 0
   Prospekt:
@@ -626,7 +626,7 @@ cards:
   Putzen:
     box: 0
   Qualität:
-    box: 1
+    box: 3
   Quittung:
     box: 0
   Rad:
@@ -638,7 +638,7 @@ cards:
   Raucher:
     box: 0
   Raum:
-    box: 0
+    box: 1
   Rechnung:
     box: 0
   Regen:
@@ -648,7 +648,7 @@ cards:
   Reinigung:
     box: 0
   Reis:
-    box: 0
+    box: 3
   Reise:
     box: 0
   Reisebüro:
@@ -660,11 +660,11 @@ cards:
   Reparatur:
     box: 0
   Reservieren:
-    box: 2
+    box: 3
   Restaurant:
     box: 0
   Rezept:
-    box: 2
+    box: 3
   Ring:
     box: 0
   Rock:
@@ -672,13 +672,13 @@ cards:
   Rose:
     box: 0
   Rucksack:
-    box: 0
+    box: 2
   Ruhe:
     box: 0
   Rundgang:
     box: 0
   Rücken:
-    box: 0
+    box: 1
   S-Bahn:
     box: 0
   Saft:
@@ -688,7 +688,7 @@ cards:
   Salz:
     box: 0
   Satz:
-    box: 1
+    box: 4
   Schade:
     box: 0
   Schalter:
@@ -696,9 +696,9 @@ cards:
   Schiff:
     box: 0
   Schild:
-    box: 0
+    box: 2
   Schinken:
-    box: 0
+    box: 2
   Schlafzimmer:
     box: 0
   Schloss:
@@ -708,7 +708,7 @@ cards:
   Schnee:
     box: 0
   Schnupfen:
-    box: 1
+    box: 2
   Schokolade:
     box: 0
   Schrank:
@@ -716,7 +716,7 @@ cards:
   Schuh:
     box: 0
   Schule:
-    box: 0
+    box: 3
   Schwester:
     box: 0
   Schwimmbad:
@@ -730,9 +730,9 @@ cards:
   Seife:
     box: 0
   Seite:
-    box: 1
+    box: 3
   Sekunde:
-    box: 1
+    box: 2
   Senioren:
     box: 0
   Service:
@@ -758,11 +758,11 @@ cards:
   Speisekarte:
     box: 0
   Spielplatz:
-    box: 0
+    box: 3
   Sport:
-    box: 0
+    box: 1
   Sprache:
-    box: 0
+    box: 2
   Staat:
     box: 0
   Stadt:
@@ -776,15 +776,15 @@ cards:
   Stein:
     box: 0
   Stelle:
-    box: 0
+    box: 1
   Stempel:
     box: 0
   Stern:
     box: 0
   Steuer:
-    box: 0
+    box: 2
   Stift:
-    box: 0
+    box: 2
   Stimme:
     box: 0
   Stock:
@@ -794,13 +794,13 @@ cards:
   Strand:
     box: 0
   Straße:
-    box: 0
+    box: 3
   Straßenbahn:
     box: 0
   Stress:
     box: 0
   Student:
-    box: 1
+    box: 2
   Studium:
     box: 2
   Stuhl:
@@ -820,9 +820,9 @@ cards:
   Tafel:
     box: 0
   Tag:
-    box: 1
+    box: 2
   Tankstelle:
-    box: 0
+    box: 2
   Tante:
     box: 0
   Tanz:
@@ -864,13 +864,13 @@ cards:
   Tochter:
     box: 0
   Toilette:
-    box: 0
+    box: 1
   Tomate:
     box: 0
   Topf:
-    box: 0
+    box: 3
   Torte:
-    box: 0
+    box: 2
   Tour:
     box: 0
   Tourist:
@@ -900,7 +900,7 @@ cards:
   Universität:
     box: 0
   Unterkunft:
-    box: 0
+    box: 2
   Unterricht:
     box: 0
   Unterschrift:
@@ -910,9 +910,9 @@ cards:
   Urlaub:
     box: 0
   Vase:
-    box: 0
+    box: 3
   Vater:
-    box: 0
+    box: 1
   Vati:
     box: 0
   Veranstaltung:
@@ -924,7 +924,7 @@ cards:
   Versicherung:
     box: 0
   Verspätung:
-    box: 0
+    box: 2
   Vertrag:
     box: 0
   Vetter:
@@ -940,21 +940,21 @@ cards:
   Voll:
     box: 0
   Vorname:
-    box: 0
+    box: 3
   Vorschlag:
     box: 0
   Vorsicht:
     box: 0
   WC:
-    box: 0
-  Wagen:
     box: 1
+  Wagen:
+    box: 2
   Wald:
     box: 0
   Waschmaschine:
     box: 0
   Wasser:
-    box: 0
+    box: 2
   Weg:
     box: 0
   Wein:
@@ -970,7 +970,7 @@ cards:
   Wert:
     box: 0
   Wiese:
-    box: 0
+    box: 2
   Wind:
     box: 0
   Wissen:
@@ -984,7 +984,7 @@ cards:
   Wohnung:
     box: 0
   Wohnzimmer:
-    box: 0
+    box: 2
   Wolke:
     box: 0
   Wort:
@@ -992,7 +992,7 @@ cards:
   Wunder:
     box: 0
   Wunsch:
-    box: 0
+    box: 1
   Wurst:
     box: 0
   Wut:
@@ -1008,17 +1008,17 @@ cards:
   Zeit:
     box: 0
   Zeitschrift:
-    box: 0
+    box: 2
   Zeitung:
     box: 0
   Zentrum:
     box: 0
   Zettel:
-    box: 0
+    box: 2
   Zeugnis:
-    box: 0
+    box: 2
   Ziehen:
-    box: 0
+    box: 2
   Ziel:
     box: 0
   Zimmer:
@@ -1032,15 +1032,15 @@ cards:
   Zuerst:
     box: 0
   Zufrieden:
-    box: 0
+    box: 2
   Zug:
     box: 0
   Zukunft:
-    box: 0
+    box: 1
   Zusammen:
-    box: 0
+    box: 1
   Zuschauer:
-    box: 0
+    box: 1
   Zustand:
     box: 0
   Zutritt:
@@ -1056,9 +1056,9 @@ cards:
   abgeben:
     box: 0
   abholen:
-    box: 3
+    box: 2
   abschließen:
-    box: 0
+    box: 2
   all-:
     box: 0
   allein:
@@ -1068,7 +1068,7 @@ cards:
   also:
     box: 0
   alt:
-    box: 0
+    box: 4
   an:
     box: 0
   anbieten:
@@ -1082,7 +1082,7 @@ cards:
   anmachen:
     box: 0
   anmelden:
-    box: 0
+    box: 1
   anrufen:
     box: 0
   antworten:
@@ -1090,23 +1090,23 @@ cards:
   anziehen:
     box: 0
   arbeiten:
-    box: 0
+    box: 1
   arbeitslos:
     box: 0
   backen:
-    box: 1
+    box: 2
   baden:
-    box: 0
+    box: 2
   bauen:
     box: 0
   beantworten:
     box: 0
   bedeuten:
-    box: 0
+    box: 1
   beeilen (sich):
     box: 0
   beenden:
-    box: 0
+    box: 1
   beginnen:
     box: 0
   begründen:
@@ -1126,7 +1126,7 @@ cards:
   bestellen:
     box: 0
   besuchen:
-    box: 0
+    box: 2
   betreuen:
     box: 0
   bezahlen:
@@ -1138,7 +1138,7 @@ cards:
   bisschen:
     box: 0
   bitte:
-    box: 0
+    box: 2
   bitter:
     box: 0
   bleiben:
@@ -1180,15 +1180,15 @@ cards:
   daran:
     box: 0
   darauf:
-    box: 0
+    box: 2
   darin:
-    box: 0
+    box: 3
   darum:
     box: 0
   darunter:
     box: 0
   darüber:
-    box: 0
+    box: 3
   das:
     box: 0
   dauern:
@@ -1196,7 +1196,7 @@ cards:
   davon:
     box: 0
   dazu:
-    box: 0
+    box: 2
   dein:
     box: 0
   denken:
@@ -1210,7 +1210,7 @@ cards:
   deutlich:
     box: 0
   dick:
-    box: 0
+    box: 1
   direkt:
     box: 0
   doch:
@@ -1220,9 +1220,9 @@ cards:
   draußen:
     box: 0
   dringend:
-    box: 0
+    box: 2
   drinnen:
-    box: 0
+    box: 2
   drucken:
     box: 0
   drüben:
@@ -1236,7 +1236,7 @@ cards:
   durch:
     box: 0
   duschen:
-    box: 0
+    box: 2
   dürfen:
     box: 0
   echt:
@@ -1244,11 +1244,11 @@ cards:
   egal:
     box: 0
   eigen-:
-    box: 1
+    box: 2
   eigentlich:
     box: 0
   ein-:
-    box: 0
+    box: 2
   einfach:
     box: 0
   einladen:
@@ -1260,7 +1260,7 @@ cards:
   einsteigen:
     box: 2
   eintragen:
-    box: 2
+    box: 3
   einverstanden:
     box: 0
   einzeln:
@@ -1270,7 +1270,7 @@ cards:
   empfehlen:
     box: 0
   endlich:
-    box: 1
+    box: 2
   eng:
     box: 0
   entschuldigen:
@@ -1282,15 +1282,15 @@ cards:
   erleben:
     box: 0
   erledigen:
-    box: 0
+    box: 1
   erzählen:
     box: 0
   etwa:
-    box: 0
+    box: 1
   etwas:
-    box: 0
+    box: 3
   euch:
-    box: 0
+    box: 1
   euer:
     box: 0
   fahren:
@@ -1326,11 +1326,11 @@ cards:
   frisch:
     box: 0
   froh:
-    box: 0
+    box: 3
   früh:
     box: 0
   früher:
-    box: 1
+    box: 3
   fühlen:
     box: 0
   füllen:
@@ -1340,13 +1340,13 @@ cards:
   ganz:
     box: 0
   geben:
-    box: 0
+    box: 2
   geboren:
     box: 0
   gefallen:
     box: 0
   gegen:
-    box: 0
+    box: 2
   gegenüber:
     box: 0
   gehen:
@@ -1354,7 +1354,7 @@ cards:
   gehören:
     box: 0
   gelb:
-    box: 0
+    box: 2
   gemütlich:
     box: 0
   genau:
@@ -1368,7 +1368,7 @@ cards:
   gern:
     box: 0
   gesund:
-    box: 0
+    box: 1
   gewinnen:
     box: 0
   glauben:
@@ -1388,23 +1388,23 @@ cards:
   grüßen:
     box: 0
   gut:
-    box: 1
+    box: 3
   günstig:
-    box: 1
+    box: 2
   haben:
     box: 0
   halten:
-    box: 2
+    box: 3
   hart:
-    box: 0
+    box: 1
   heiraten:
-    box: 0
+    box: 3
   heiß:
     box: 0
   heißen:
     box: 0
   helfen:
-    box: 0
+    box: 1
   hell:
     box: 0
   her:
@@ -1414,7 +1414,7 @@ cards:
   heute:
     box: 0
   hier:
-    box: 0
+    box: 1
   hinten:
     box: 0
   hinter:
@@ -1448,43 +1448,43 @@ cards:
   in:
     box: 0
   innen:
-    box: 0
-  innerhalb:
     box: 1
+  innerhalb:
+    box: 2
   interessant:
-    box: 0
+    box: 2
   interessieren:
     box: 0
   ja:
-    box: 0
+    box: 3
   kalt:
-    box: 0
+    box: 2
   kaufen:
     box: 0
   kein:
     box: 0
   kennen:
-    box: 0
+    box: 2
   kennenlernen:
     box: 0
   klein:
     box: 0
   klettern:
-    box: 1
+    box: 3
   klug:
     box: 0
   kochen:
-    box: 0
+    box: 2
   kommen:
     box: 0
   korrigieren:
-    box: 0
+    box: 1
   kosten:
     box: 0
   krank:
-    box: 0
+    box: 1
   kurz:
-    box: 0
+    box: 2
   können:
     box: 0
   kümmern:
@@ -1492,7 +1492,7 @@ cards:
   lachen:
     box: 0
   lang:
-    box: 0
+    box: 1
   lange:
     box: 0
   langsam:
@@ -1504,23 +1504,23 @@ cards:
   laufen:
     box: 0
   laut:
-    box: 2
+    box: 3
   leer:
-    box: 1
+    box: 2
   legen:
-    box: 0
+    box: 2
   leicht:
     box: 0
   leise:
     box: 0
   lernen:
-    box: 0
+    box: 2
   lesen:
-    box: 0
+    box: 2
   letzte:
     box: 0
   lieb:
-    box: 0
+    box: 1
   lieben:
     box: 0
   liefern:
@@ -1530,7 +1530,7 @@ cards:
   machen:
     box: 0
   man:
-    box: 0
+    box: 1
   manche:
     box: 0
   mehr:
@@ -1538,19 +1538,19 @@ cards:
   mein:
     box: 0
   meinen:
-    box: 0
+    box: 2
   meist-:
-    box: 0
-  mieten:
     box: 1
+  mieten:
+    box: 2
   mischen:
     box: 0
   mit:
     box: 0
   mitbringen:
-    box: 0
+    box: 2
   mitkommen:
-    box: 0
+    box: 1
   mitmachen:
     box: 0
   mitnehmen:
@@ -1560,11 +1560,11 @@ cards:
   möchte:
     box: 0
   mögen:
-    box: 0
+    box: 2
   möglich:
     box: 0
   müde:
-    box: 0
+    box: 1
   müssen:
     box: 0
   nach:
@@ -1572,7 +1572,7 @@ cards:
   nah:
     box: 0
   nass:
-    box: 0
+    box: 2
   natürlich:
     box: 0
   neben:
@@ -1582,13 +1582,13 @@ cards:
   nein:
     box: 0
   nennen:
-    box: 0
+    box: 2
   nervös:
-    box: 0
+    box: 1
   nett:
-    box: 0
+    box: 1
   neu:
-    box: 0
+    box: 2
   neun:
     box: 0
   nicht:
@@ -1612,13 +1612,13 @@ cards:
   nützlich:
     box: 0
   ob:
-    box: 0
+    box: 1
   oben:
     box: 0
   oder:
     box: 0
   offen:
-    box: 0
+    box: 1
   oft:
     box: 0
   ohne:
@@ -1634,15 +1634,15 @@ cards:
   passen:
     box: 0
   passieren:
-    box: 0
+    box: 2
   per:
     box: 0
   planen:
-    box: 0
+    box: 1
   plötzlich:
     box: 0
   preiswert:
-    box: 0
+    box: 2
   privat:
     box: 0
   pro:
@@ -1676,7 +1676,7 @@ cards:
   ruhig:
     box: 0
   sagen:
-    box: 2
+    box: 4
   sammeln:
     box: 0
   sauber:
@@ -1686,15 +1686,15 @@ cards:
   schaffen:
     box: 0
   scharf:
-    box: 1
+    box: 2
   scheinen:
     box: 0
   schenken:
     box: 0
   schicken:
-    box: 0
+    box: 1
   schlafen:
-    box: 0
+    box: 2
   schlecht:
     box: 0
   schließen:
@@ -1704,13 +1704,13 @@ cards:
   schmecken:
     box: 0
   schmerz:
-    box: 0
+    box: 1
   schmuck:
     box: 0
   schmutzig:
-    box: 0
+    box: 1
   schneiden:
-    box: 2
+    box: 3
   schneien:
     box: 1
   schnell:
@@ -1720,7 +1720,7 @@ cards:
   schrecklich:
     box: 0
   schreiben:
-    box: 0
+    box: 2
   schreien:
     box: 0
   schriftlich:
@@ -1730,7 +1730,7 @@ cards:
   schwarz:
     box: 0
   schwer:
-    box: 0
+    box: 1
   schwimmen:
     box: 0
   schädlich:
@@ -1738,27 +1738,27 @@ cards:
   schön:
     box: 0
   sehen:
-    box: 0
+    box: 2
   sehr:
     box: 0
   sein:
-    box: 0
+    box: 1
   seit:
-    box: 0
+    box: 2
   selbst:
-    box: 0
+    box: 2
   selten:
     box: 0
   senden:
     box: 0
   setzen:
-    box: 0
+    box: 2
   sicher:
     box: 0
   singen:
     box: 2
   sitzen:
-    box: 0
+    box: 1
   so:
     box: 0
   sofort:
@@ -1774,19 +1774,19 @@ cards:
   spazieren gehen:
     box: 0
   spielen:
-    box: 2
+    box: 3
   sprechen:
     box: 0
   spät:
     box: 0
   später:
-    box: 0
+    box: 2
   stark:
     box: 0
   stattfinden:
     box: 0
   stehen:
-    box: 0
+    box: 2
   stehlen:
     box: 0
   steigen:
@@ -1796,11 +1796,11 @@ cards:
   sterben:
     box: 0
   still:
-    box: 0
+    box: 2
   stolz:
     box: 0
   stoppen:
-    box: 2
+    box: 3
   stressig:
     box: 0
   studieren:
@@ -1826,15 +1826,15 @@ cards:
   tief:
     box: 0
   toll:
-    box: 0
+    box: 1
   tot:
-    box: 0
+    box: 2
   tragen:
     box: 0
   trainieren:
-    box: 0
+    box: 1
   treffen:
-    box: 0
+    box: 2
   trinken:
     box: 0
   trocken:
@@ -1842,7 +1842,7 @@ cards:
   träumen:
     box: 0
   tun:
-    box: 0
+    box: 2
   typisch:
     box: 0
   türkisch:
@@ -1854,7 +1854,7 @@ cards:
   umziehen:
     box: 0
   unbedingt:
-    box: 0
+    box: 2
   und:
     box: 0
   unten:
@@ -1870,7 +1870,7 @@ cards:
   untersuchen:
     box: 0
   verabredet:
-    box: 1
+    box: 3
   verbieten:
     box: 0
   verdienen:
@@ -1894,11 +1894,11 @@ cards:
   verletzt:
     box: 0
   verlieren:
-    box: 0
-  vermieten:
-    box: 0
-  verpassen:
     box: 2
+  vermieten:
+    box: 2
+  verpassen:
+    box: 3
   verreisen:
     box: 0
   verstehen:
@@ -1908,19 +1908,19 @@ cards:
   viel:
     box: 0
   vielleicht:
-    box: 0
+    box: 2
   von:
     box: 0
   vor:
-    box: 0
+    box: 2
   voraus:
-    box: 0
+    box: 1
   vorbei:
     box: 0
   vorbereiten:
-    box: 1
+    box: 2
   vorgestern:
-    box: 0
+    box: 2
   vorher:
     box: 0
   vorn:
@@ -1928,7 +1928,7 @@ cards:
   vorstellen:
     box: 0
   wahr:
-    box: 0
+    box: 1
   wahrscheinlich:
     box: 0
   wandern:
@@ -1936,7 +1936,7 @@ cards:
   wann:
     box: 0
   warm:
-    box: 0
+    box: 2
   warten:
     box: 0
   warum:
@@ -1952,7 +1952,7 @@ cards:
   weil:
     box: 0
   weinen:
-    box: 1
+    box: 2
   weit:
     box: 0
   weiter:
@@ -1974,9 +1974,9 @@ cards:
   wie:
     box: 0
   wieder:
-    box: 0
-  wiederholen:
     box: 2
+  wiederholen:
+    box: 3
   wiegen:
     box: 0
   wieviel:
@@ -1990,15 +1990,15 @@ cards:
   wird:
     box: 0
   wirklich:
-    box: 0
+    box: 1
   witzig:
-    box: 0
+    box: 2
   wo:
     box: 0
   woher:
     box: 0
   wohin:
-    box: 0
+    box: 2
   wohnen:
     box: 0
   wolkig:
@@ -2008,15 +2008,15 @@ cards:
   wunderbar:
     box: 0
   wählen:
-    box: 0
+    box: 3
   wünschen:
     box: 0
   zahlen:
-    box: 0
+    box: 2
   zeichnen:
     box: 0
   zeigen:
-    box: 0
+    box: 2
   zu:
     box: 0
   zuhören:
@@ -2053,23 +2053,58 @@ translations:
   Briefmarke: Postage stamps
   Brieftasche: Briefcase
   Böse: Böse
+  Empfänger: Recipient
   Finger: finger
+  Geschirr: Crockery
+  Haushalt: household
+  Insel: Island
+  Kenntnisse: Skills
+  LKW: Truck
+  Lösung: Solution
+  Messer: Knife
+  Panne: Breakdown
   Pilz: Pilz
+  Rucksack: BACKPACK
   Schnupfen: Cold
+  Tankstelle: Gas station
+  Topf: Bowl
+  Torte: Cake
+  Unterkunft: lodgings
   Voll: Full
+  Wiese: Wiese
+  Wunsch: Preference
+  Zeitschrift: Journal
   Zettel: Record time
   abholen: to pick up
+  darin: 'Thereof:'
+  darüber: over
+  dazu: plus
   einsteigen: get in
   eintragen: to enter
   entschuldigen: apologises
+  froh: glad
+  günstig: cheap
+  hart: hard
   her: her
+  innen: Inside
   innerhalb: working within
+  lang: long
   leer: empty
+  lieb: dear woman milk
+  meist-: Mostly
+  nass: Wet
+  nennen: call
+  preiswert: Good value for money
+  riechen: To smell it
+  schmutzig: dirty
   schneiden: cut
   still: silent
   tot: tot
+  unbedingt: absolutely
   verabredet: appointed
   verhaftet: arrested
   verpassen: Get Left
+  voraus: Estimated
+  wahr: 'true'
   weinen: crying
   windig: windy

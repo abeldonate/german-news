@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fill-in Phrase Game</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='fill_in.css') }}">
+</head>
+<body>
+  <div class="backdrop"></div>
+  <main class="fill-layout">
+    <header class="fill-header">
+      <p class="label">Phrase Builder</p>
+      <h1>Fill-in</h1>
+      <p class="sub">Read the English phrase, then write each German word below.</p>
+      <a class="home-link" href="{{ url_for('page_dashboard') }}">Back to dashboard</a>
+    </header>
+
+    <section class="fill-panel" aria-live="polite">
+      <p class="section-label">English phrase</p>
+      <h2 id="phrase-english" class="phrase-english">Loading...</h2>
+
+      <div id="word-board" class="word-board"></div>
+
+      <div class="fill-actions" role="group" aria-label="Fill-in controls">
+        <button id="btn-give-up" type="button" class="btn btn-give-up">Give up</button>
+        <button id="btn-level" type="button" class="btn btn-level">Level: A1</button>
+        <button id="btn-next" type="button" class="btn btn-next">Next</button>
+      </div>
+
+      <p id="fill-status" class="fill-status">Loading phrases...</p>
+    </section>
+  </main>
+
+  <script src="{{ url_for('static', filename='fill_in.js') }}"></script>
+</body>
+</html>

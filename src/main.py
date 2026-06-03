@@ -69,6 +69,62 @@ CARDS_A2_DECK = LeitnerDeck(
 )
 
 
+def load_fill_in_levels(level_files: dict[str, Any]) -> dict[str, list[dict[str, Any]]]:
+    loaded: dict[str, list[dict[str, Any]]] = {}
+    if not isinstance(level_files, dict):
+        return loaded
+
+    for level, rel_path in level_files.items():
+        abs_path = os.path.join(os.path.abspath("."), str(rel_path))
+        try:
+            with open(abs_path, "r", encoding="utf-8") as fh:
+                parsed = yaml.safe_load(fh) or []
+        except (OSError, yaml.YAMLError):
+            loaded[str(level).lower()] = []
+            continue
+
+        if not isinstance(parsed, list):
+            loaded[str(level).lower()] = []
+            continue
+
+        phrases: list[dict[str, Any]] = []
+        for item in parsed:
+            if not isinstance(item, dict):
+                continue
+            english = str(item.get("english", "")).strip()
+            german = str(item.get("german", "")).strip()
+            pairs = item.get("pairs", [])
+            if not english or not german or not isinstance(pairs, list):
+                continue
+
+            clean_pairs: list[dict[str, str]] = []
+            for pair in pairs:
+                if not isinstance(pair, dict):
+                    continue
+                hint = str(pair.get("en", "")).strip()
+                answer = str(pair.get("de", "")).strip()
+                if hint and answer:
+                    clean_pairs.append({"en": hint, "de": answer})
+
+            if clean_pairs:
+                phrases.append({"english": english, "german": german, "pairs": clean_pairs})
+
+        loaded[str(level).lower()] = phrases
+
+    return loaded
+
+
+FILL_IN_LEVELS = load_fill_in_levels(
+    FEATURE_SETTINGS.get(
+        "fill_in_level_files",
+        {
+            "a1": "data/fill_in_a1.yml",
+            "a2": "data/fill_in_a2.yml",
+        },
+    )
+)
+
+
 @app.route("/")
 def page_dashboard() -> str:
     return render_template("dashboard.html")
@@ -97,6 +153,11 @@ def page_news() -> str:
 @app.route("/cards")
 def page_cards() -> str:
     return render_template("cards.html", target_lang=APP_TARGET_LANG)
+
+
+@app.route("/fill-in")
+def page_fill_in() -> str:
+    return render_template("fill_in.html")
 
 
 @app.route("/api/word-translate")
@@ -216,6 +277,19 @@ def api_cards_feedback():
 
     next_card = CARDS_A2_DECK.next_card()
     return jsonify({"updated": updated_card, "next": next_card})
+
+
+@app.route("/api/fill-in/phrases")
+def api_fill_in_phrases():
+    level = request.args.get("level", "a1").strip().lower()
+    if not level:
+        level = "a1"
+
+    phrases = FILL_IN_LEVELS.get(level)
+    if phrases is None:
+        return jsonify({"error": "Unknown level.", "available_levels": sorted(FILL_IN_LEVELS.keys())}), 400
+
+    return jsonify({"level": level, "phrases": phrases, "count": len(phrases)})
 
 
 if __name__ == "__main__":

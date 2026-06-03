@@ -11,6 +11,7 @@ Small Flask app to fetch one article from Tagesschau and render it for German le
 - Highlights vocabulary with CEFR color tags (A2, B1, B2, C1).
 - Includes an A2 spaced-repetition deck page at /cards.
 - Tap a German word card to reveal translation, then rate with Again/Hard/Good/Easy.
+- Includes a Fill-in phrase game at /fill-in with A1/A2 phrase packs.
 
 ### Setup
 
